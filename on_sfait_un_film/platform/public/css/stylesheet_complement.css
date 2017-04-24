@@ -1,0 +1,474 @@
+/*GLOBAL*/
+/*background*/
+.background-svg  {
+    width: 100%;
+    /*min-height: 1440px;*/
+    min-height: 100vh;
+    background-image: url("../images/background/background.svg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+/*Menu déroulant rappel code couleur background*/
+.dropdown-menu > li > a:hover:nth-child(6n+1),
+.dropdown-menu > li > a:focus:nth-child(6n+1) {
+    background-color: #EA468F;
+}
+.dropdown-menu > li > a:hover:nth-child(6n+2),
+.dropdown-menu > li > a:focus:nth-child(6n+2) {
+    background-color: #FD8B3B;
+}
+.dropdown-menu > li > a:hover:nth-child(6n+3),
+.dropdown-menu > li > a:focus:nth-child(6n+3) {
+    background-color: #FDC835;
+}
+.dropdown-menu > li > a:hover:nth-child(6n+4),
+.dropdown-menu > li > a:focus:nth-child(6n+4) {
+    background-color: #6DB343;
+}
+.dropdown-menu > li > a:hover:nth-child(6n+5),
+.dropdown-menu > li > a:focus:nth-child(6n+5) {
+    background-color: #5EC7C1;
+}
+.dropdown-menu > li > a:hover:nth-child(6n+6),
+.dropdown-menu > li > a:focus:nth-child(6n+6) {
+    background-color: #D32A2A;
+}
+
+/*WELCOME*/
+/*shaker*/
+.posters {
+    background-image: url("../images/background/backgroundposters.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+}
+.limit-link {
+    margin: 0 auto;
+    max-width: 330px;
+    height: 85vh;
+}
+#welcome-png {
+    margin: 0 auto;
+    max-width: 330px;
+    height: 85vh;
+    background-image: url("../images/background/blenderbackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#welcome-png:hover, .welcome-png:focus {
+    background-image: url("../images/background/gifblender.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*SEARCH (movie)*/
+#searchbox label, #searchbox input {
+    display: none;
+}
+#searchform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#searchform .icons {
+    display: flex;
+    justify-content: space-around;
+    background: content-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 93%;
+    margin: 0 auto;
+    position: relative;
+}
+#searchform .icons:nth-child(4n+1) {
+    background: content-box;
+    background-image: url("../images/icons/vhsshelf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#searchform .icons:nth-child(4n+3) {
+    background: content-box;
+    background-image: url("../images/icons/vhsshelf2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#searchform .icons img {
+    margin-top: 2%;
+    margin-bottom: 3px;
+    z-index: 1;
+}
+#searchform .break {
+    background: content-box;
+    background-image: url("../images/icons/break.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 19px;
+
+}
+#searchform .icons .vhs {
+    position: absolute;
+    height: 150px;
+    right: 81.2%;
+    z-index: 0;
+}
+#searchform .icons img:nth-child(2) {
+    right: 81.2%;
+}
+#searchform .icons img:nth-child(4) {
+    right: 56.1%;
+}
+#searchform .icons img:nth-child(6) {
+    right: 31.1%;
+}
+#searchform .icons img:nth-child(8) {
+    right: 6.15%;
+}
+#noresults {
+    padding: 25px ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+/*div flottante txt info*/
+#searchinfo {
+    position: fixed;
+    text-align: center;
+    padding: 0;
+    top: 25vh;
+    right: 1vw;
+    z-index: 1;
+    opacity: 0;
+    font-size: 2em;
+}
+
+
+/*SEARCHRESULTS*/
+#vhsresult {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.legend img {
+    width: 15%;
+}
+#vhsresult section {
+    padding-top: 30px;
+    margin: 5% 1%;
+    height: 600px;
+    width: 346px;
+}
+#vhsresult section div:first-child {
+    height: 100px;
+}
+#vhsresult section div:nth-child(n+2) {
+    margin-top: 11%;
+    margin-bottom: 14.5%;
+}
+#vhsresult h4 {
+    background-color: whitesmoke;
+    width: 50%;
+    margin: 0 auto 1% auto;
+}
+#vhsresult h5 {
+    color: whitesmoke;
+    width: 30%;
+    margin: 0 auto 5% auto;
+}
+#vhsresult p {
+    margin: 0 auto;
+    color: whitesmoke;
+    width: 70%;
+}
+#vhsresult div:nth-child(2) .fa {
+    color: blue;
+}
+#vhsresult div:nth-child(3) .fa {
+    color: #1cc000;
+}
+#vhsresult div:nth-child(4) .fa {
+    color: #ff88d7;
+}
+
+
+/*MY MOVIES*/
+.globalmymovie {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.backgroundvhs {
+    height: 130px;
+    background-color: black;
+    padding: 10px 80px;
+    width: 680px;
+}
+.mymovies {
+    background: content-box;
+    background-image: url("../images/icons/logovhs.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 50px;
+    height: 110px;
+    background-color: whitesmoke;
+}
+.mymovies .panel-body > div:first-child {
+    font-family: JennaSue;
+    font-size: 2em;
+}
+.mymovies .panel-body div:first-child div {
+    border-bottom: 2px solid #000000;
+    line-height: 1em;
+    height: 35px;
+}
+
+
+/*NEWS*/
+.news {
+    padding: 2% 4%;
+}
+.news:last-child hr {
+    display: none;
+}
+.news img {
+    margin: 5px 2%;
+    max-width: 260px;
+}
+
+
+/*HOME PAGE user*/
+.lastmovie {
+    margin: 0 auto;
+    background-image: url("../images/background/ticketbackgroundvertical.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 250px;
+    height: 426px;
+    padding: 120px 5%;
+    font-size: 1.2em;
+}
+.lastmovie:focus, .lastmovie:hover {
+    background-image: url("../images/background/ticketbackgroundverticalcouleur.svg");
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 30px;
+}
+footer section {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+}
+footer section i {
+    background-color: #bf5200;
+    padding: 0 3px;
+}
+footer section a {
+    background-color: black;
+    padding: 0 3px;
+}
+footer section:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+}
+footer section:first-child {
+    background-color: #6DB343;
+    font-size: 2em;
+}
+footer section:first-child div {
+    margin: 0 auto;
+}
+footer section:nth-child(2) {
+    background-color: #5EC7C1;
+}
+footer section:nth-child(2) div div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 auto;
+}
+footer section:nth-child(2) > p {
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+footer section:nth-child(2) div div p{
+    font-size: 3em;
+    text-align: center;
+}
+footer section:nth-child(2) div p {
+    text-align: right;
+    font-size: 2em;
+}
+footer section:nth-child(2) img {
+    width: 40px;
+    height: 40px;
+    margin: 0 3%;
+}
+footer section:nth-child(3) {
+    background-color: #D32A2A;
+    font-size: 2em;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 1000px) and (max-width: 1199px){
+    #searchform .icons .vhs {
+        position: absolute;
+        height: 150px;
+        z-index: 0;
+    }
+    #searchform .icons img:nth-child(2) {
+        right: 79.7%;
+    }
+    #searchform .icons img:nth-child(4) {
+        right: 54.6%;
+    }
+    #searchform .icons img:nth-child(6) {
+        right: 29.6%;
+    }
+    #searchform .icons img:nth-child(8) {
+        right: 4.55%;
+    }
+}
+@media all and (max-width: 1024px) {
+
+    /*WELCOME*/
+    .posters {
+        background-image: url("../images/background/backgroundvertical.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        text-align: center;
+    }
+    #welcome-png {
+        background-image: url("../images/background/gifblender.gif");
+    }
+
+    /*SEARCH*/
+    .row #searchinfo {
+        top: 70vh;
+        right: 24.5vw;
+        font-size: 1.8em;
+    }
+    #searchform .icons .vhs {
+        display: none;
+    }
+    footer section:nth-child(2) div {
+        font-size: 0.9em;
+    }
+
+    /*HOME*/
+    .lastmovie {
+        background-image: url("../images/background/ticketbackgroundverticalcouleur.svg");
+    }
+}
+@media all and (max-width: 700px){
+    .panel-default #searchform .icons, .panel-default #searchform .break  {
+        background-image: none;
+    }
+    /*SEARCH*/
+    #searchbackground {
+        background-color: transparent;
+        border: none;
+    }
+    .panel #searchform .break {
+        min-height: 0;
+    }
+    #searchform .icons img {
+        height: 130px;
+        margin: 0;
+    }
+
+    /*SEARCH RESULTS*/
+    #vhsresult section {
+        padding-top: 25px;
+        height: 490px;
+        width: 285px;
+    }
+    .legend img {
+        width: 40%;
+    }
+    #vhsresult section div:first-child {
+        height: 90px;
+    }
+    #vhsresult section div:nth-child(n+2) {
+        margin-top: 10.5%;
+        margin-bottom: 16%;
+    }
+    #vhsresult h4 {
+        font-size: 1.1em;
+        margin: 0 auto 0.5% auto;
+    }
+    #vhsresult h5 {
+        font-size: 1em;
+        margin: 0 auto 1% auto;
+    }
+    #vhsresult p {
+        font-size: 0.9em;
+    }
+
+    /*NEWS*/
+    .media div .media-object {
+        float: none;
+        margin: 0 auto;
+    }
+    .news p {
+        margin-top: 10px;
+    }
+
+    /*MY MOVIES*/
+    .backgroundvhs {
+        height: 120px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 99vw;
+        font-size: 0.8em;
+    }
+    .mymovies {
+        background-position: 99%;
+        background-size: 35px;
+        height: 100px;
+    }
+    .mymovies .panel-body div:first-child div {
+        width: 200px;
+        line-height: 2.1em;
+        margin-bottom: 17px;
+        margin-top: -13px;
+    }
+    .removableTxt {
+        width: 208px;
+    }
+
+    /*FOOTER*/
+    footer section {
+        height: 400px;
+    }
+    footer section:nth-child(1) div {
+        font-size: 0.9em;
+    }
+    footer section:nth-child(2) div p {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    footer section:nth-child(2) div div p {
+        font-size: 2em;
+    }
+
+    footer section:nth-child(3) div {
+        font-size: 0.8em;
+    }
+}
